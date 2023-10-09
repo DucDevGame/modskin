@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 1000px;
+}
+div#header {
+  background-color: yellow;
+  position: relative;
+  width: 108%;
+}
+
+div#header .in-header p {
+  color: green;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.vethan {
+  float: left;
+  margin: 5px;
+}
+
+div.button-down p {
+  text-transform: uppercase;
+}
+div.vethan img {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+div.text {
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+div.text a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.text button {
+  width: 80px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 3px;
+  background-color: yellow;
+}
+div.list-image {
+  margin-top: 5px;
+  margin-left: 120px;
+}
+div.text-title {
+  text-align: center;
+  color: green;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* CSS chung cho mọi kích thước màn hình */
+
+/* Media Query cho màn hình có chiều rộng tối đa là 768px (thường là điện thoại) */
+@media (max-width: 768px) {
+  div#header {
+    width: 100%; /* Đặt lại chiều rộng cho phần header */
+  }
+
+  div.vethan img {
+    width: 100%; /* Đảm bảo ảnh bị thu nhỏ về chiều rộng của màn hình */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị sai lệch */
+    margin: 0px;
+  }
+
+  div.text {
+    font-size: 14px; /* Điều chỉnh font-size cho văn bản nhỏ hơn */
+  }
+
+  div.list-image {
+    margin-left: 0; /* Đặt lại lề trái cho danh sách ảnh */
+  }
+}
