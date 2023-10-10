@@ -5,6 +5,7 @@
 }
 html {
   height: 1000px;
+  background-color: pink;
 }
 div#header {
   background-color: yellow;
@@ -12,14 +13,30 @@ div#header {
   width: 108%;
 }
 
-div#header .in-header p {
-  color: green;
+div#header .in-header .text-run {
+  color: rgba(232, 22, 255, 0.988);
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 
+div.in-sidebar li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.in-sidebar li a {
+  text-decoration: none;
+  margin: 10px;
+  color: #000;
+  font-weight: bold;
+}
+.in-sidebar ul {
+  text-align: center;
+}
+div.sidebar {
+  margin-top: 10px;
+}
 div.vethan {
   float: left;
   margin: 5px;
@@ -30,7 +47,7 @@ div.button-down p {
 }
 div.vethan img {
   width: 400px;
-  height: 200px;
+  height: auto;
   margin: 10px;
   border: 2px solid #000;
   border-radius: 4px;
@@ -68,7 +85,7 @@ div.text-title {
 /* CSS chung cho mọi kích thước màn hình */
 
 /* Media Query cho màn hình có chiều rộng tối đa là 768px (thường là điện thoại) */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   div#header {
     width: 100%; /* Đặt lại chiều rộng cho phần header */
   }
@@ -85,5 +102,16 @@ div.text-title {
 
   div.list-image {
     margin-left: 0; /* Đặt lại lề trái cho danh sách ảnh */
+  }
+
+  .in-sidebar li a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px;
+    color: #000;
+    font-weight: bold;
+  }
+  .in-sidebar ul {
+    text-align: center;
   }
 }
