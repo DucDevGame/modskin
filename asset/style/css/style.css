@@ -15,7 +15,7 @@ div#header {
 
 div#header .in-header .text-run {
   color: rgba(232, 22, 255, 0.988);
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -82,6 +82,35 @@ div.text-title {
   margin-top: 15px;
 }
 
+/* CSS cho thông báo */
+.notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+}
+.notification-content p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* CSS cho nút đóng */
+button {
+  margin-top: 10px;
+  width: 50px;
+  height: 27px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
 /* CSS chung cho mọi kích thước màn hình */
 
 /* Media Query cho màn hình có chiều rộng tối đa là 768px (thường là điện thoại) */
